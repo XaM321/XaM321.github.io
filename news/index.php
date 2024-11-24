@@ -24,24 +24,6 @@
 
 	<div id="container">
 		
-		<?php
-		if (isset($_GET["story"])) {
-			$base = "stories";
-			$story = $_GET["story"];
-			$news = "stories/$story.html";
-			if (realpath($news) === false || strncmp($news, $base, strlen($base)) !== 0) {
-				echo "Missing file or not in the expected location $news $base";
-			} else {
-				$story = str_replace("-", " ", ucfirst($story));
-				echo "<div id='pageheader'>";
-				echo "<h1>$story.</h1>";
-				echo "</div>";
-				include $news;
-			}
-		} else {
-			echo "Missing file or not in the expected location";
-		}
-		?>
 	</div>
 </body>
 </html>
