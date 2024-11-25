@@ -8,6 +8,13 @@ a :hover { color: #000; text-decoration: underline; }
 .right { text-align: right; }
 .hide { display: none;}
 
+html {
+      margin: 0;
+      padding: 0;
+      width: 100vh;
+      height: 100vh;
+}
+
 nav {
       display: table;
       table-layout: fixed;
@@ -17,7 +24,7 @@ nav {
 
 #menu {
       width: 100%;
-      min-height: 35px;
+      min-height: 6vh;
       background-color: #000;
       position: fixed;
       z-index: 100;
@@ -29,7 +36,7 @@ nav {
       color: #fff;
 }
 
-ul#topnav {
+#topnav {
       display: table-row;
       padding: 0;
       overflow: hidden;
@@ -37,37 +44,24 @@ ul#topnav {
       bottom: 0;
 }
 
-ul#topnav li {
+#topnav li {
       list-style-type: none;
       display: table-cell;
       text-align: center;
       vertical-align: middle;
 }
 
-ul#topnav li a {
+#topnav li a {
       display: block;
-      padding: 8px;
+      padding: 6%;
       text-decoration: underline;
+      font-size: calc(4px + 1.2vw);
 }
 
 
-ul#topnav li a:hover {
+#topnav li a:hover {
       color: #777;
       text-decoration: none;
-}
-
-ul#topnav li> ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-}
-
-
-ul#topnav li> ul > li {
-	font-size: 120%;
-      float: left;
-      display: inline;
-      padding-right: 5px;
 }
       
 #container {
@@ -83,6 +77,26 @@ ul#topnav li> ul > li {
 
 #pageheader h1 {
       font-size: 100;
+}
+
+#title h1 {
+      width: 100vw;
+      margin: 0;
+      margin-top: 2vh;
+      padding: 5%;
+      padding-bottom: 0;
+      font-weight: 1000;
+      font-size: 4em;
+      text-align: center;
+}
+
+#title p {
+      width: 100vw;
+      margin: 0;
+      padding: 2%;
+      font-weight: 1000;
+      font-size: 1em;
+      text-align: left;
 }
 
 .pageitem {
@@ -128,35 +142,4 @@ ul#topnav li> ul > li {
       display: table-cell;
 }
 
-#show-menu  { display: none;}
-.open, .close { background-color: inherit; color: #fff; text-align: right; font-weight: normal; font-size: 1.5em; padding: 0; position: absolute; top: 10%; right: 5%; display: none; }
-
-
-/* start make items responsive */
-@media screen and (max-width: 1024px) {
-      /* menu */
-      ul #topnav { display: none; }
-      .hide, .open { display: block; }
-
-
-      #show-menu:checked ~ .open { display: none;}
-      #show-menu:checked ~ .close { font-size: 1.6em; display:block; }
-      #show-menu:checked ~ ul#topnav { display: block; position: absolute; top: 100%; right: 0%; width: 100%; margin: 0; margin-bottom: 1%; overflow: visible; }
-      ul#topnav li { display: block; text-align: center; margin: 0; background-color: #000; padding: 1% 0; }
-
-      ul#topnav li a { display: block; padding-right: 0%; padding-bottom: 5px; text-decoration: none; }
-      ul#topnav li a:hover { text-decoration: underline; }
-
-
-      ul#topnav li> ul { display: table; float: none; table-layout: fixed; margin: 0 auto; }
-      ul#topnav li> ul > li { padding-left: 10px; }
-
-      /* other items */
-      .pageitem h2 { font-size: 120%; }
-      .pageitem p { padding: 0; line-height: 150%; font-size: 99%;}
-      .pageitem .col { padding: 0 3% 0 2%; }
-
-}
-
 @media screen and (max-width: 700px){ .col { float: left; margin: auto; width: 100%; margin-bottom: 10%; } }
-/* end make items responsive */
