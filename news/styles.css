@@ -14,7 +14,7 @@ html {
       height: 100%;
 }
 
-body *{
+body * {
       text-align: center;
 }
 
@@ -87,7 +87,7 @@ nav {
 #title h1 {
       width: 100%;
       margin: 0;
-      padding-bottom: 0;
+      padding: 0;
       font-weight: 1000;
       font-size: 4em;
       text-align: center;
