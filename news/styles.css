@@ -97,6 +97,7 @@ nav {
       width: 99.5%;
       margin: 0;
       margin-top: calc(24px + 2vw);
+      padding: 0;
       font-weight: 1000;
       font-size: 1em;
       text-align: right;
