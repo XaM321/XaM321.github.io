@@ -14,7 +14,7 @@ html {
       height: 100%;
 }
 
-body {
+body *{
       text-align: center;
 }
 
