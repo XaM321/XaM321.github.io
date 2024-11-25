@@ -1,18 +1,25 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Abel);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
-body { background-color: #fefdfb; color: #555; font-family: "Abel", sans-serif; font-size: 93%; font-weight: normal; margin: 0; }
+body { background-color: #fefdfb; color: #555; font-family: "Abel", sans-serif; font-size: 160%; font-weight: normal; margin: 0; }
 a :link, a :visited, a :active{ color: inherit; text-decoration: none; }
 a :hover { color: #000; text-decoration: underline; }
 
 .right { text-align: right; }
-.hide { display: none;}
+.hide { display: none; }
 
 html {
       margin: 0;
       padding: 0;
-      width: 100vh;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
+}
+
+body {
+      text-align: center;
+}
+
+body p {
+      padding: 10%;
 }
 
 nav {
@@ -24,7 +31,6 @@ nav {
 
 #menu {
       width: 100%;
-      min-height: 6vh;
       background-color: #000;
       position: fixed;
       z-index: 100;
@@ -53,9 +59,9 @@ nav {
 
 #topnav li a {
       display: block;
-      padding: 6%;
+      padding: 3%;
       text-decoration: underline;
-      font-size: calc(4px + 1.2vw);
+      font-size: calc(18px + 0.8vw);
 }
 
 #topnav li a:hover {
@@ -79,10 +85,8 @@ nav {
 }
 
 #title h1 {
-      width: 100vw;
+      width: 100%;
       margin: 0;
-      margin-top: 2vh;
-      padding: 5%;
       padding-bottom: 0;
       font-weight: 1000;
       font-size: 4em;
@@ -90,12 +94,12 @@ nav {
 }
 
 #title p {
-      width: 100vw;
+      width: 99.5%;
       margin: 0;
-      padding: 2%;
+      margin-top: calc(24px + 2vw);
       font-weight: 1000;
       font-size: 1em;
-      text-align: left;
+      text-align: right;
 }
 
 .pageitem {
